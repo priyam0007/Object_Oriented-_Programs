@@ -1,7 +1,20 @@
 package com.blz.oops;
 
 public class Stock {
-	public static void main(String[] args) {
-		System.out.println("Welcome to Object Oriented Practice Problem");
+	private String shareName;
+	private int noOfShare;
+	private int sharePrice;
+
+	public Stock(String shareName, int noOfShare, int sharePrice) {
+		super();
+		this.shareName = shareName;
+		this.noOfShare = noOfShare;
+		this.sharePrice = sharePrice;
 	}
+
+	@Override
+	public String toString() {
+		return "Stock [shareName=" + shareName + ", noOfShare=" + noOfShare + ", sharePrice=" + sharePrice + "]";
+	}
+
 }
