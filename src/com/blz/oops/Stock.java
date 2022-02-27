@@ -12,9 +12,20 @@ public class Stock {
 		this.sharePrice = sharePrice;
 	}
 
+	public String getShareName() {
+		return shareName;
+	}
+
+	public int getNoOfShare() {
+		return noOfShare;
+	}
+
+	public int getSharePrice() {
+		return sharePrice;
+	}
+
 	@Override
 	public String toString() {
 		return "Stock [shareName=" + shareName + ", noOfShare=" + noOfShare + ", sharePrice=" + sharePrice + "]";
 	}
-
 }
